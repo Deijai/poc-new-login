@@ -1,0 +1,82 @@
+<app-header></app-header>
+<ion-content>
+
+  <div class="container">
+
+    <div class="content">
+      <div class="box1">
+        <img src="assets/images/img01.svg" alt="" srcset="">
+        <span style="margin: 10px; color: #4A5C60;">
+          Olá!
+          Aqui você acompanhará todas as atualizações relacionadas à Linha Protheus.
+        </span>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="box1">
+        <span style="margin: 10px; color: #4A5C60;">
+          Vamos começar?
+          Se inscreva nos tópicos de seu interesse para ficar informado sobre as novidades!
+        </span>
+      </div>
+    </div>
+
+    <div class="swiper-box">
+      <ion-card>
+        <swiper-container [modules]="swiperModules" #swiper (afterinit)="swiperReady()"
+          (slidechange)="swiperSlideChanged($event)" [loop]="true" [pagination]="true">
+          <swiper-slide>
+            <div class="box-slide01">
+              <div style="color: #239DC3; font-size: 21px;">Quero ser notificado sobre</div>
+              <div class="box-item" style="margin: 0px;">
+                <ion-item lines="none">
+                  <ion-checkbox slot="start"></ion-checkbox>
+                  <ion-label>Expedição contínua - Backoffice</ion-label>
+                </ion-item>
+                <ion-item lines="none">
+                  <ion-checkbox slot="start"></ion-checkbox>
+                  <ion-label>Atualização de AppServer</ion-label>
+                </ion-item>
+                <ion-item lines="none">
+                  <ion-checkbox slot="start"></ion-checkbox>
+                  <ion-label>Atualização de SmartClient</ion-label>
+                </ion-item>
+                <ion-item lines="none">
+                  <ion-checkbox slot="start"></ion-checkbox>
+                  <ion-label>Atualização de DBAccess</ion-label>
+                </ion-item>
+                <ion-item lines="none">
+                  <ion-checkbox slot="start"></ion-checkbox>
+                  <ion-label>Atualização de Stored Procedure</ion-label>
+                </ion-item>
+                <ion-item lines="none">
+                  <ion-checkbox slot="start"></ion-checkbox>
+                  <ion-label>Novidades gerais</ion-label>
+                </ion-item>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="box-slide01">
+              <div style="color: #239DC3; font-size: 21px;">Tudo pronto!</div>
+              <div class="box-item">
+                <div class="box-text">
+                  <span>Agora você ficará por dentro de todas as novidades da Linha Protheus.</span>
+                </div>
+                <div class="img">
+                  <img src="assets/images/check.svg" alt="" srcset="">
+                </div>
+                <div class="box-btn">
+                  <ion-button fill="clear" (click)="onSubscriptions()">
+                    Ok
+                  </ion-button>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>

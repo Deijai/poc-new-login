@@ -1,0 +1,47 @@
+ion-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ion-button {
+  --witdh: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btn-escuro {
+  --background: #4A5C60;
+  color: #FFF;
+}
+
+.btn-primary {
+  --background: #239DC3;
+  color: #FFF;
+}
+
+.btn-primary-outline {
+  color: #239DC3;
+  --border-color: #239DC3;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin: 10px;
+}
+
+.box1 {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+}
+
+span {
+  color: #4A5C60;
+  font-size: 18px;
+}

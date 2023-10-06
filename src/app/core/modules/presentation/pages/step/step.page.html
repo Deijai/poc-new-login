@@ -1,0 +1,31 @@
+<ion-content>
+
+  <div class="container">
+    <div class="box1">
+        Logo 01
+    </div>
+
+    <div class="box1">
+      <span>Ja possui acesso?</span>
+      <ion-button class="btn-primary" expand="block" (click)="onRedirectLogin()">
+        <ion-icon slot="end" name="log-out-outline"></ion-icon>
+        Faça login
+      </ion-button>
+    </div>
+
+    <div class="box1">
+      <span>Ou experimente?</span>
+      <ion-button class="btn-escuro" expand="block" (click)="onRedirectUpdates()">
+        Ver atualizações do Protheus
+      </ion-button>
+
+      <ion-button fill="outline" expand="block" class="btn-primary-outline" (click)="onRedirectDemonstration()">
+        Acessar modo demonstração
+      </ion-button>
+    </div>
+
+    <div class="box1">
+      Logo 02
+    </div>
+  </div>
+</ion-content>
